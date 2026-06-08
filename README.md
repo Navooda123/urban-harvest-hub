@@ -4,6 +4,16 @@ A full-stack Progressive Web Application (PWA) connecting urban communities with
 
 ---
 
+## 🌐 Live Deployment
+
+| Service | URL |
+|---------|-----|
+| **Frontend (Netlify)** | https://kaleidoscopic-blini-15e0da.netlify.app |
+| **Backend API (Railway)** | https://urban-harvest-hub-production-5fc4.up.railway.app |
+| **API Status Check** | https://urban-harvest-hub-production-5fc4.up.railway.app/api/status |
+
+---
+
 ## 📁 Project Structure
 
 ```
