@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary Meta -->
+    <title>Urban Harvest Hub — Eco Community Platform</title>
+    <meta name="description" content="Connecting urban communities with sustainable workshops, local events, and eco-friendly products. Book workshops, subscribe to veggie boxes, and more." />
+    <meta name="theme-color" content="#4CAF50" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Urban Harvest Hub" />
+    <meta property="og:description" content="Eco-conscious community platform for workshops, events, and sustainable products." />
+    <meta property="og:type" content="website" />
+
+    <!-- Favicon & Apple Touch -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/icons/pwa-192x192.png" />
+
+    <!-- PWA Manifest (injected by vite-plugin-pwa) -->
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+    />
+    <!-- SW cleanup: unregisters stale service workers in dev -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.getRegistrations().then(function(registrations) {
+          for (let r of registrations) { r.unregister(); }
+        });
+        caches.keys().then(function(names) {
+          names.forEach(function(name) { caches.delete(name); });
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
